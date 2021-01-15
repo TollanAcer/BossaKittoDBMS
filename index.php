@@ -479,12 +479,10 @@ div.modal_sel_id_new {
     }
 
     .canvas {
-      background: #0044ff !important; 
-      background: url("../img/filler.jpg") center center/cover;
-
       height: 100%;
       left: 0;
       position: absolute;
+      z-index: -2;
       top: 0;
       width: 100vw;
     }
@@ -550,20 +548,17 @@ div.modal_sel_id_new {
         </div>
     </div>
 </nav>
-<div id="pt" class="canvas"></div>
-<header class="masthead"> <!--style="background-image: url('img/Moto Themes 12.png');" -->
+<header class="masthead" style="/*background-image: url('img/Moto Themes 12.png');*/">
     <div class="container">
         <div class="intro-text" style="padding-top: 230px;">
         	<section id="title">
             <div class="intro-lead-in"><span style="font-size: 35px;">Database Management System</span></div>
             <div class="intro-heading text-uppercase" style="font-size: 40px;"><span style="font-size: 37px;">Bossa kitto kebele Administration Bureau</span></div>
         	</section>
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="search_profile.php">START</a>
-        </div>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="search_profile.php">START</a>  
     </div>
 </header>
-
-
+</div><div class="canvas" id="pt"></div>
 
 
 
@@ -1024,3 +1019,4 @@ function openModal(cur_emp_id, select_modal){
 <script src="assets/js/agency.js"></script>
 </body>
 </html>
+    <script src="assets/scripts/canvas.js"></script>
