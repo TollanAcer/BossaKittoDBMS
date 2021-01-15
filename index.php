@@ -477,7 +477,21 @@ div.modal_sel_id_new {
     a#delete_no:hover, a#delete_ok:hover{
       background-color:#47ba7f;
     }
+
+    .canvas {
+      background: #0044ff !important; 
+      background: url("../img/filler.jpg") center center/cover;
+
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100vw;
+    }
 </style>
+
+<script src="assets/scripts/pt.min.js"></script>
+<script src="assets/scripts/canvas.js"></script>
 </head>
 <body onload="loadIndex();">
   <?php
@@ -536,7 +550,8 @@ div.modal_sel_id_new {
         </div>
     </div>
 </nav>
-<header class="masthead" style="background-image: url('img/Moto Themes 12.png');">
+<div id="pt" class="canvas"></div>
+<header class="masthead"> <!--style="background-image: url('img/Moto Themes 12.png');" -->
     <div class="container">
         <div class="intro-text" style="padding-top: 230px;">
         	<section id="title">
@@ -547,6 +562,7 @@ div.modal_sel_id_new {
         </div>
     </div>
 </header>
+
 
 
 
